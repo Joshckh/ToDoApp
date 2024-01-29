@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+}
+
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.iconCont{
+    width: 5vw;
+    background-color: red;
+}
+
+.projectCont{
+    width: 15vw;
+    background-color: blue;
+}
+
+.mainCont{
+    width: 60vw;
+    background-color: green;
+}
+
+.infoCont{
+    width: 20vw;
+    background-color: brown;
+}
+

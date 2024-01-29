@@ -1,7 +1,12 @@
 // app.js
 import { Task } from './task';
 import { Project } from './project';
+import '../css/index.css';
 
+
+if (module.hot) {
+    module.hot.accept();
+  }
 
 const project1 = new Project("todo");
 
@@ -14,6 +19,7 @@ project1.removeTask(task1)
 project1.edit("task","asd","tomorrow")
 project1.complete("task")
 console.log(project1)
+console.log("Hi")
 
 
 
