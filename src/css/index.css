@@ -1,16 +1,19 @@
 *{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
-
 
 .container{
     display: flex;
-    height: 100vh;
+    height: 100%;
 }
 
 .iconCont{
     width: 5vw;
-    background-color: red;
+    background-color: #FFD79C;
+    position: relative;
+    z-index: -1;
 }
 
 .button{
@@ -21,25 +24,90 @@
 
 .projectCont{
     width: 15vw;
-    background-color: blue;
+    background-color:#fffcf9 ;
+    border-radius:2em;
+    box-shadow: -23px 1px 0px 0px #FFD79C , 23px 1px 0px 0px #F6F5F8;
+    z-index: -2 ;
 }
 
 .project{
-    border:1.2px solid black;
     height:1em;
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.3em;
     text-align: center;
     padding: 1em 0em;
+  
 }
 
 .mainCont{
     width: 60vw;
-    background-color: green;
+    background-color:#F6F5F8 ;
 }
 
-.infoCont{
+.title{
+    border-bottom: 1.2px solid black;
+    text-align: center;
+    padding: 1.5em 0em;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+
+  .infoCont{
     width: 20vw;
-    background-color: brown;
+    background-color:;
 }
 
+.taskInfo{
+    height: 60vh;
+    border: 1.5px solid black;
+}
+
+.taskData{
+    height: 35vh;
+    border: 1.5px solid black;
+}
+
+.actionCont{
+    height: 5vh;
+    border: 1.5px solid black;
+}
+
+.taskCheckbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #30cfd0;
+    border-radius: 5px;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .taskCheckbox:before {
+    content: "";
+    background-color: #30cfd0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .taskCheckbox:checked:before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .task {
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    margin: 1em 1em;
+  }

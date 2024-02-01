@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Todo List App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -21,8 +24,15 @@
   </div>
   <div class="mainCont">
     <div class="title">Project Name</div>
-    <div class="task">
-      task
+    <div class="tasks">
+    <label for="1" class="task">
+      <input type="checkbox" class="taskCheckbox">
+      Create UX
+    </label>
+    <label for="2" class="task">
+      <input type="checkbox" class="taskCheckbox">
+      Create UI
+    </label>
     </div>
   </div>
   <div class="infoCont">
@@ -33,7 +43,6 @@
       task Data is here
     </div>
     <div class="actionCont">
-      <button>done</button>
       <button>delete</button>
       <button>edit</button>
     </div>
