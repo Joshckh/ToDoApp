@@ -1,0 +1,71 @@
+<!-- src/html/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Todo List App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/072caa8a95.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+  <div class="iconCont">
+   <button class="button" id="homeBtn"><i class="fa-solid fa-house"></i></button>
+   <button class="button" id="newBtn"><i class="fa-solid fa-plus"></i></button>
+   <button class="button" id="delBtn"><i class="fa-solid fa-trash"></i></button>
+  </div>
+  <div class="projectCont">
+    <div class="project">
+      <p>The last Shinobi</p>
+    </div>
+    <div class="project">
+      <p>The last Swan</p>
+    </div>
+  </div>
+  <div class="mainCont">
+    <div class="mainProjectCont"> 
+      <div class="projectName">
+        The last Swan
+      </div>
+    </div>
+    <div class="tasks">
+    <label for="1" class="task">
+      <input type="checkbox" class="taskCheckbox">
+      Create UX
+    </label>
+    <label for="2" class="task">
+      <input type="checkbox" class="taskCheckbox">
+      Create UI
+    </label>
+    </div>
+  </div>
+  <div class="infoCont">
+    <div class="taskInfoCont">
+      <div class="taskHeader">
+        <h3>Task Info:</h3>
+        <div class="taskInfo">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim doloribus maxime consequuntur reprehenderit, assumenda ut sunt laudantium rerum atque inventore saepe, earum quasi quae magnam aliquid nam culpa mollitia quos.</p>
+        </div>
+      </div>
+    </div>
+    <div class="taskDataHeader">
+      <div class="taskData">
+        <h3>Task Data</h3>
+        <p>Created:2/2/2024</p>
+        <p>Deadline:3/2/2024</p>
+        <p>Priority: High</p>
+      </div>
+    </div>
+    <div class="actionCont">
+      <button>delete</button>
+      <button>edit</button>
+    </div>
+  </div>
+</div>
+<script src="../dist/bundle.js"></script>
+</body>
+</html>
