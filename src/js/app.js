@@ -3,23 +3,21 @@ import { Task } from './task';
 import { Project } from './project';
 import '../css/index.css';
 
+const homeBtn = document.getElementById("homeBtn")
+const newBtn = document.getElementById("newBtn")
+const delBtn = document.getElementById("delBtn")
+const taskEditBtn = document.getElementById("taskEditBtn")
+const taskDelBtn = document.getElementById("taskDelBtn")
 
-if (module.hot) {
-    module.hot.accept();
+const projectCont = document.querySelector(".projectCont")
+
+newBtn.addEventListener("click", () => {
+  const projectName = prompt("Enter project name:"); // Prompt the user for the project name
+  if (projectName) {
+    const newProject = new Project(projectName); // Create a new Project instance with the provided name
   }
-
-const project1 = new Project("todo");
-
-let task1 = new Task("create project","create a project","today","high");
-let task2 = new Task("task","make task","today","high")
-
-project1.addTask(task1)
-project1.addTask(task2)
-project1.removeTask(task1)
-project1.edit("task","asd","tomorrow")
-project1.complete("task")
-console.log(project1)
-console.log("Hi")
-
-
-
+  const projectDiv = document.createElement('div');
+  projectDiv.classList.add('project');
+  projectDiv.textContent = projectName;
+  projectCont.appendChild(projectDiv);
+});
