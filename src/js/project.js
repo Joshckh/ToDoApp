@@ -1,3 +1,5 @@
+export const projectList = [];
+
 export class Project{
     constructor(name){
         this.name = name;

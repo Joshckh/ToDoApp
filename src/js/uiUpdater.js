@@ -4,3 +4,7 @@ export function createProjectDiv(projectName,projectCont) {
     projectDiv.textContent = projectName;
     projectCont.appendChild(projectDiv);    
 }
+
+export function removeProjectDiv(projectName,projectCont){
+    
+}

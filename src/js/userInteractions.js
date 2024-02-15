@@ -1,5 +1,5 @@
 import camelCase from 'camelcase';
-import { Project } from './project';
+import { Project, projectList } from './project';
 import { Task } from './task';
 import * as uiUpdater from './uiUpdater';
 
@@ -31,8 +31,14 @@ function newBtnAction(){
     if (projectName) {
         const camelCaseName = camelCase(projectName);
         const newProject = new Project(camelCaseName);
+        projectList.push(newProject)
         uiUpdater.createProjectDiv(projectName,projectCont);
   }
+}
+
+function delBtnAction(){
+    
+    uiUpdater.removeProjectDiv(projectName,projectCont);
 }
 
 export { listenForClicks };
